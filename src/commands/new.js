@@ -12,7 +12,8 @@ class NewCommand extends Command {
     const {args} = this.parse(NewCommand)
     const {appName} = args
     if (appName.trim()) {
-      const rootDir = path.join(__dirname, '../../')
+      const rootDir = process.cwd()
+      Logger.info(`Creating ${appName} at ${rootDir}`)
       const tempDir = path.join(rootDir, '.tmp')
       const tmp = new Dir(tempDir).clean().make().cd()
       const templateDir = path.join(tempDir, 'packages/templates')
