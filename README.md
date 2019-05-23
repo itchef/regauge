@@ -28,6 +28,7 @@ USAGE
 <!-- commands -->
 * [`rg hello`](#rg-hello)
 * [`rg help [COMMAND]`](#rg-help-command)
+* [`rg new`](#rg-new)
 
 ## `rg hello`
 
@@ -63,6 +64,24 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
+## `rg new`
+
+Describe the command here
+
+```
+USAGE
+  $ rg new
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.0.1-2/src/commands/new.js)_
 <!-- commandsstop -->
 
 ## License
