@@ -26,27 +26,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rg hello`](#rg-hello)
 * [`rg help [COMMAND]`](#rg-help-command)
-* [`rg new`](#rg-new)
-
-## `rg hello`
-
-Describe the command here
-
-```
-USAGE
-  $ rg hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/hello.js](https://github.com/ITChef/rg-cli/blob/v0.0.1-2/src/commands/hello.js)_
+* [`rg new APPNAME`](#rg-new-appname)
 
 ## `rg help [COMMAND]`
 
@@ -65,20 +46,19 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `rg new`
+## `rg new APPNAME`
 
-Describe the command here
+To generate a new rg-cli project.
 
 ```
 USAGE
-  $ rg new
+  $ rg new APPNAME
+
+ARGUMENTS
+  APPNAME  Name of your application
 
 OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.0.1-2/src/commands/new.js)_
