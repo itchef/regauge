@@ -1,7 +1,7 @@
 {
   "name": "@itchef/rg-cli",
   "description": "A CLI tool to create and manage initial react project",
-  "version": "0.0.1-3",
+  "version": "0.0.1-4",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
     "rg": "./bin/run"
