@@ -1,4 +1,4 @@
-const {init, add, commit} = require('../utils/git.util')
+const {Git: {init, add, commit}} = require('@itchef/rg-lib')
 
 const initialCommit = () => {
   init()

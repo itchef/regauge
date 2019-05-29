@@ -1,6 +1,5 @@
 const path = require('path')
-const Dir = require('../utils/dir.util')
-const File = require('../utils/file.util')
+const {Dir, File} = require('@itchef/rg-lib')
 
 const getTemplatesPathsByName = templateDir => {
   const templatesPathByName = {}
@@ -13,7 +12,7 @@ const getTemplatesPathsByName = templateDir => {
 const copyBaseReact = (templateDir, rootDir, projectName) => {
   const templatesPathByName = getTemplatesPathsByName(templateDir)
   const projectDir = path.join(rootDir, projectName)
-  Dir.copy(templatesPathByName['base-react'], projectDir)
+  new Dir(templatesPathByName['base-react']).copy(projectDir)
   return projectDir
 }
 

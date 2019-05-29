@@ -1,9 +1,7 @@
 const path = require('path')
-const Dir = require('../utils/dir.util')
-const {clone} = require('../utils/git.util')
+const {Dir, Git, Logger} = require('@itchef/rg-lib')
 const {copyBaseReact, updatePackageJson} = require('../helpers/new.helper')
 const {initialCommit} = require('../helpers/git.helper')
-const Logger = require('../utils/logger.util')
 
 const {Command, flags} = require('@oclif/command')
 
@@ -20,7 +18,7 @@ class NewCommand extends Command {
       const packageJsonPath = path.join(rootDir, appName, 'package.json')
       Logger.info('Creating base app........')
 
-      clone('itchef', 'rg', 'packages')
+      Git.clone('itchef', 'rg', 'packages')
       Logger.info('Creating base app........')
       const projectDir = copyBaseReact(templateDir, rootDir, appName)
       updatePackageJson(packageJsonPath, appName)
