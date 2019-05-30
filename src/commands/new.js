@@ -2,6 +2,7 @@ const path = require('path')
 const {Dir, Git, Logger} = require('@itchef/rg-lib')
 const {copyBaseReact, updatePackageJson} = require('../helpers/new.helper')
 const {initialCommit} = require('../helpers/git.helper')
+const {execSync} = require('child_process')
 
 const {Command, flags} = require('@oclif/command')
 
@@ -23,11 +24,12 @@ class NewCommand extends Command {
       const projectDir = copyBaseReact(templateDir, rootDir, appName)
       updatePackageJson(packageJsonPath, appName)
       Logger.info('Adding initial commit........')
-      new Dir(projectDir)
+      const dir = new Dir(projectDir)
       .clean('.git')
       .cd()
-      .execute(() => initialCommit())
-
+      Logger.info('Installing dependencies..............')
+      dir.execute(() => execSync('npm install'))
+      dir.execute(() => initialCommit())
       tmp.clean()
     }
   }
