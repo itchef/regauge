@@ -8,17 +8,34 @@
     text-align: left;
     padding-left: 100px;
   }
+
+  .mainContainer {
+    margin-left: 170px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
   .consoleSectionWrapper {
     margin: 0 auto;
   }
+
+  .mainContainer {
+    padding: 0 20px;
+  }
+}
+
+.projectTitle {
+  font-weight: 300;
 }
 
 .heroBannerButton {
   border: 1px solid #FFF;
   color: #FFF;
+}
+
+.heroBannerButton:hover {
+  background: #FFF;
+  color: $primaryColor;
 }
 
 .consoleSectionWrapper {
@@ -58,12 +75,22 @@
   border-radius: 50%;
 }
 
+.mainContainer {
+  max-width: 750px;
+}
+
+.featureWrapper h3 {
+  color: $primaryColor;
+}
+
 .red {
   background: #FF0000;
 }
+
 .yellow {
   background: #C0CA33;
 }
+
 .green {
   background: #1B5E20;
 }

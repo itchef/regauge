@@ -31,6 +31,14 @@ const siteConfig = {
   cleanUrl: true,
 
   enableUpdateTime: true,
+  homePage: {
+    commands: [
+      {
+        title: 'rg new',
+        description: 'The React Generator CLI makes it easy to create a react application with webpack that already works, right out of the box. It already follows react’s best practices!',
+      },
+    ],
+  },
 }
 
 module.exports = siteConfig

@@ -13,6 +13,7 @@ const Container = CompLibrary.Container
 const GridBlock = CompLibrary.GridBlock
 
 const siteConfig = require(`${process.cwd()}/siteConfig.js`)
+const homePageConfig = siteConfig.homePage
 function docUrl(doc, language) {
   return `${siteConfig.baseUrl}docs/${language ? `${language}/` : ''}${doc}`
 }
@@ -42,10 +43,10 @@ const SplashContainer = props => (
 )
 
 const ProjectTitle = () => (
-  <h2 className="projectTitle">
-    {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
-  </h2>
+  <h5 className="projectTitle">
+    React Generator CLI
+    <small className="projectTagLine">{siteConfig.tagline}</small>
+  </h5>
 )
 
 const PromoSection = props => (
@@ -108,6 +109,13 @@ Block.defaultProps = {
   padding: ['bottom', 'top'],
 }
 
+const Features = () => homePageConfig.commands.map(command => (
+  <div className="featureWrapper">
+    <h3>{command.title}</h3>
+    <p>{command.description}</p>
+  </div>
+))
+
 class Index extends React.Component {
   render() {
     const language = this.props.language || ''
@@ -115,7 +123,9 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash language={language} />
-        <div className="mainContainer" />
+        <div className="mainContainer">
+          <Features />
+        </div>
       </div>
     )
   }
