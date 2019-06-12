@@ -1,0 +1,69 @@
+@media only screen and (min-width: 1024px) {
+  .homeWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .projectBanner {
+    text-align: left;
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .consoleSectionWrapper {
+    margin: 0 auto;
+  }
+}
+
+.heroBannerButton {
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.consoleSectionWrapper {
+  background: #000;
+  width: 332px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.consoleContent {
+  padding: 10px 20px;
+  color: #FFF;
+  line-height: 35px;
+}
+
+.consoleContent span {
+  display: block;
+  text-align: left;
+}
+
+.consoleMenuBar {
+  height: 23px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: #E0E0E0;
+}
+
+.actionButton {
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.red {
+  background: #FF0000;
+}
+.yellow {
+  background: #C0CA33;
+}
+.green {
+  background: #1B5E20;
+}
