@@ -1,1 +1,8 @@
-{}
+{
+  "docs": {
+    "INTRODUCTION": ["documentation-intro"],
+    "GETTING STARTED": [
+      "getting-started"
+    ]
+  }
+}

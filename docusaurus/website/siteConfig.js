@@ -6,7 +6,7 @@ const siteConfig = {
   projectName: 'rg-cli',
   organizationName: 'itchef',
   headerLinks: [
-    {href: '/', label: 'DOCUMENTATION'},
+    {doc: 'getting-started', label: 'DOCUMENTATION'},
     {href: 'https://github.com/itchef/rg-cli', label: 'GITHUB'},
   ],
 
@@ -31,6 +31,8 @@ const siteConfig = {
   cleanUrl: true,
 
   enableUpdateTime: true,
+  scrollToTop: true,
+  docsSideNavCollapsible: true,
   homePage: {
     commands: [
       {
