@@ -1,8 +1,10 @@
 {
   "docs": {
-    "INTRODUCTION": ["documentation-intro"],
+    "INTRODUCTION": ["introduction"],
     "GETTING STARTED": [
-      "getting-started"
+      "getting-started",
+      "folder-structure-for-new-app",
+      "npm-scripts"
     ]
   }
 }

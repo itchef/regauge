@@ -6,7 +6,7 @@ const siteConfig = {
   projectName: 'rg-cli',
   organizationName: 'itchef',
   headerLinks: [
-    {doc: 'getting-started', label: 'DOCUMENTATION'},
+    {doc: 'introduction', label: 'DOCUMENTATION'},
     {href: 'https://github.com/itchef/rg-cli', label: 'GITHUB'},
   ],
 

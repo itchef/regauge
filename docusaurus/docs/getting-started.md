@@ -34,62 +34,6 @@ You **don’t** need to install or configure tools like Webpack or Babel. They a
 
 Just create a project, and you can launch your application seamlessly.
 
-## Creating an App
+## Local Development Requirements
 
 **You’ll need to have Node >= 9 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
-
-To create a new app, you may choose one of the following methods:
-
-## Output
-
-Running any of these commands will create a directory called `my-app` inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:
-
-```
-my-app
-├── __mocks__
-├── node_modules
-│   ├── fileMock.js
-│   └── styleMock.js
-├── jest.config.js
-├── package.json
-├── package-lock.json
-├── src
-│   ├── assets
-│   │   └── images
-│   │       └── Logo.png
-│   ├── index.html
-│   ├── js
-│   │   ├── App
-│   │   │   ├── index.js
-│   │   │   ├── index.scss
-│   │   │   └── index.test.js
-│   │   └── index.js
-│   └── setupTests.js
-└── webpack.config.js
-```
-
-No configuration or complicated folder structures, just the files you need to build your app. Once the installation is done, you can open your project folder:
-
-```sh
-cd my-app
-```
-
-## Scripts
-
-Inside the newly created project, you can run some built-in commands:
-
-| Tasks        | Description    |
-| ------------- |:-------------:|
-| **npm start** | Boots your application up on http://localhost:8080/  |
-| **npm build** | Builds your application in production mode.|
-| **npm test** | Run jest unit test cases of the newly created application |
-| **npm run test:coverage** | Run jest unit test cases with coverage |
-| **npm run test:watch** | Run jest unit test cases on watch mode |
-| **npm run pretty** | Run the prettier checks |
-| **npm run lint** | Run eslint checks for the application |
-| **npm run lint:fix** | Fix ESLint issues |
-| **npm run lint:styles** | Run style lint checks for the application |
-
-The build is minified and the filenames include the hashes.
-
-Your app is ready to be deployed.
