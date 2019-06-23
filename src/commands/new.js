@@ -11,17 +11,14 @@ class NewCommand extends Command {
     const {args} = this.parse(NewCommand)
     const {appName} = args
     if (appName.trim()) {
-      const rootDir = process.cwd()
-      Logger.info(`Creating ${appName} at ${rootDir}`)
-      const tempDir = path.join(rootDir, '.tmp')
+      const workingDirectory = process.cwd()
+      const reactTemplateDir = path.join(__dirname, '../../templates')
+      Logger.info(`Creating ${appName} at ${workingDirectory}`)
+      const tempDir = path.join(workingDirectory, '.tmp')
       const tmp = new Dir(tempDir).clean().make().cd()
-      const templateDir = path.join(tempDir, 'packages/templates')
-      const packageJsonPath = path.join(rootDir, appName, 'package.json')
+      const packageJsonPath = path.join(workingDirectory, appName, 'package.json')
       Logger.info('Creating base app........')
-
-      Git.clone('itchef', 'rg', 'packages')
-      Logger.info('Creating base app........')
-      const projectDir = copyBaseReact(templateDir, rootDir, appName)
+      const projectDir = copyBaseReact(reactTemplateDir, workingDirectory, appName)
       updatePackageJson(packageJsonPath, appName)
       Logger.info('Adding initial commit........')
       const dir = new Dir(projectDir)

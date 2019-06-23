@@ -1,0 +1,30 @@
+.app__wrapper {
+  font-size: 20px;
+}
+
+.app__header {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1A237E;
+}
+
+.app__content {
+  margin-top: 180px;
+  display: flex;
+}
+
+.logo__wrapper {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.app__footer {
+  text-align: center;
+  a {
+    font-weight: 600;
+  }
+}
