@@ -26,8 +26,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`rg generate`](#rg-generate)
 * [`rg help [COMMAND]`](#rg-help-command)
 * [`rg new APPNAME`](#rg-new-appname)
+
+## `rg generate`
+
+Describe the command here
+
+```
+USAGE
+  $ rg generate
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/generate.js](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/generate.js)_
 
 ## `rg help [COMMAND]`
 

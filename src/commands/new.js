@@ -1,5 +1,5 @@
 const path = require('path')
-const {Dir, Git, Logger} = require('@itchef/rg-lib')
+const {Dir, Logger} = require('@itchef/rg-lib')
 const {copyBaseReact, updatePackageJson} = require('../helpers/new.helper')
 const {initialCommit} = require('../helpers/git.helper')
 const {execSync} = require('child_process')
