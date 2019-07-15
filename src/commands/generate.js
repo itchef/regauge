@@ -1,5 +1,6 @@
 const {Command, flags} = require('@oclif/command')
 const {generateComponent} = require('../helpers/generate.helper')
+const bootstrap = require('../utils/dev-kit/bootstrap')
 
 class GenerateCommand extends Command {
   async run() {
@@ -8,7 +9,7 @@ class GenerateCommand extends Command {
       c: () => {},
     }
     const {args} = this.parse(GenerateCommand)
-    generators[args.generator](args.name)
+    generators[args.generator](args.name, bootstrap)
   }
 }
 

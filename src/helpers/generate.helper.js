@@ -1,6 +1,6 @@
 const path = require('path')
 const {Dir, File, Logger} = require('@itchef/rg-lib')
-const {execSync} = require('child_process');
+const {execSync} = require('child_process')
 
 const updateWithName = (componentPath, name) => {
   const newComponentPath = componentPath.replace('BasicComponent', name.toLowerCase())
@@ -10,22 +10,23 @@ const updateWithName = (componentPath, name) => {
   .write(newComponentPath)
 }
 
-const generateComponent = name => {
-  const workingDirectory = process.cwd()
-  const reactTemplateDir = path.join(__dirname, '../../templates')
-  Logger.info(`${name} component is getting created into ${workingDirectory}`)
-  const tempDir = path.join(workingDirectory, '.tmp')
-  const tmp = new Dir(tempDir).clean().make().cd()
-  let basicComponentDir = path.join(reactTemplateDir, 'components/basic-component')
+const copyBaseFiles = (basicComponentDir, temp) => {
   new Dir(basicComponentDir)
   .read()
   .map(file => path.join(basicComponentDir, file))
-  .forEach(filePath => new Dir(filePath).copy(tempDir))
+  .forEach(filePath => new Dir(filePath).copy(temp))
+}
 
-  new Dir(tempDir).read().map(file => updateWithName(file, name))
-  execSync(`rm ${tempDir}/BasicComponent*`)
-  new Dir(tempDir).copy(path.join(workingDirectory, name))
-  tmp.clean()
+const generateComponent = (name, {temp, templates}) => {
+  const workingDirectory = process.cwd()
+  Logger.info(`${name} component is getting created into ${workingDirectory}`)
+  new Dir(temp).cd()
+  let basicComponentDir = path.join(templates._dirName, 'components/basic-component')
+  copyBaseFiles(basicComponentDir, temp)
+  new Dir(temp).read().map(file => updateWithName(file, name))
+  execSync(`rm ${temp}/BasicComponent*`)
+  new Dir(temp).copy(path.join(workingDirectory, name))
+  new Dir(temp).clean()
 }
 
 module.exports = {
