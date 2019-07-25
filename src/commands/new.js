@@ -1,24 +1,17 @@
 const path = require('path')
 const {Dir, Logger} = require('@itchef/rg-lib')
 const {execSync} = require('child_process')
-const {cli} = require('cli-ux')
 const {copyBaseReact, processPackageJson} = require('../helpers/new.helper')
 const {initialCommit} = require('../helpers/git.helper')
+const {processUserInput} = require('../helpers/input.helper')
 
 const {Command, flags} = require('@oclif/command')
 
 class NewCommand extends Command {
-  async getUserInputs() {
-    const author = await cli.prompt('Author Name')
-    return {author}
-  }
-
   async run() {
     const {args} = this.parse(NewCommand)
     const {appName} = args
     if (appName.trim()) {
-      const appData = await this.getUserInputs()
-      appData.name = appName
       const workingDirectory = process.cwd()
       const reactTemplateDir = path.join(__dirname, '../../templates')
       Logger.info(`Creating ${appName} at ${workingDirectory}`)
@@ -27,6 +20,7 @@ class NewCommand extends Command {
       const packageJsonPath = path.join(workingDirectory, appName, 'package.json')
       Logger.info('Creating base app........')
       const projectDir = copyBaseReact(reactTemplateDir, workingDirectory, appName)
+      const appData = await processUserInput(appName)
       processPackageJson(path.join(projectDir, 'package.json'), packageJsonPath, appData)
       Logger.info('Adding initial commit........')
       const dir = new Dir(projectDir)
