@@ -16,14 +16,16 @@ const copyBaseReact = (templateDir, rootDir, projectName) => {
   return projectDir
 }
 
-const updatePackageJson = (packageJsonPath, projectName) => {
-  new File(packageJsonPath)
-  .read()
-  .update('name', projectName)
-  .write()
+const processPackageJson = (src, dest, appData) => {
+  const packageJson = require(src)
+  const newPackage = {}
+  Object.keys(packageJson).forEach(key => {
+    newPackage[key] = appData[key] || packageJson[key]
+  })
+  new File(dest, newPackage).write()
 }
 
 module.exports = {
   copyBaseReact,
-  updatePackageJson,
+  processPackageJson,
 }

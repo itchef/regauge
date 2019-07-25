@@ -12,7 +12,8 @@
     "@oclif/config": "^1.13.0",
     "@oclif/plugin-help": "^2.1.6",
     "@itchef/rg-lib": "git+https://git@github.com/itchef/rg-lib.git",
-    "temp": "0.9.0"
+    "temp": "0.9.0",
+    "cli-ux": "^5.3.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.0",
