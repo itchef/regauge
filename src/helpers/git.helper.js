@@ -1,4 +1,4 @@
-const {Git: {init, add, commit}} = require('@itchef/rg-lib')
+const {Git: {init, add, commit, globalConfig }} = require('@itchef/rg-lib')
 
 const initialCommit = () => {
   init()
@@ -6,6 +6,9 @@ const initialCommit = () => {
   commit('Initial commit.')
 }
 
+const getAuthorName = () => globalConfig().user.name
+
 module.exports = {
   initialCommit,
+  getAuthorName,
 }
