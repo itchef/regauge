@@ -3,9 +3,11 @@
 
 A CLI tool to create and manage initial react project
 
-![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge)![npm](https://img.shields.io/npm/dm/@itchef/rg-cli?logo=rg-cli&style=for-the-badge)
-![npm bundle size](https://img.shields.io/bundlephobia/min/@itchef/rg-cli?style=for-the-badge)
-![NPM](https://img.shields.io/npm/l/@itchef/rg-cli?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge)](https://npmjs.org/package/@itchef/rg-cli)
+[![DOWNLOADS](https://img.shields.io/npm/dm/@itchef/rg-cli?style=for-the-badge)](https://npmjs.org/package/@itchef/rg-cli)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@itchef/rg-cli?style=for-the-badge)](https://bundlephobia.com/result?p=@itchef/rg-cli)
+[![LICENSE](https://img.shields.io/npm/l/@itchef/rg-cli?style=for-the-badge)
+](./LICENSE)
 
 <!-- toc -->
 * [Usage](#usage)
