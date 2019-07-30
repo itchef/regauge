@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Publishing the latest website
           command: cd ./docusaurus/website && npm run publish-gh-pages
-  node-8:
+  node-10:
     <<: *test
     docker:
       - image: node:10
@@ -44,6 +44,7 @@ workflows:
   version: 2
   "@itchef/rg-cli":
     jobs:
+      - node-latest
       - node-10
       - cache:
           filters:
