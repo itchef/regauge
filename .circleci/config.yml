@@ -22,8 +22,10 @@ jobs:
       - run:
           name: Publishing the latest website
           command: |
-            cd ./docusaurus/website && npm install
-            GIT_USER=$GIT_USER CURRENT_BRANCH=$CURRENT_BRANCH USE_SSH=$USE_SSH npm run publish-gh-pages
+            git config --global user.email "$GITHUB_USERNAME@users.noreply.github.com"
+            git config --global user.name $AUTHOR_NAME
+            echo "machine github.com login $GITHUB_USERNAME password $GITHUB_TOKEN" > ~/.netrc
+            cd ./docusaurus/website && npm install && GIT_USER=$GIT_USER yarn run publish-gh-pages
   node-10:
     <<: *test
     docker:
