@@ -3,8 +3,9 @@
 
 A CLI tool to create and manage initial react project
 
-[![Version](https://img.shields.io/npm/v/@itchef/rg-cli.svg)](https://npmjs.org/package/@itchef/rg-cli)
-[![License](https://img.shields.io/npm/l/@itchef/rg-cli.svg)](https://github.com/ITChef/rg-cli/blob/master/package.json)
+![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge)![npm](https://img.shields.io/npm/dm/@itchef/rg-cli?logo=rg-cli&style=for-the-badge)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@itchef/rg-cli?style=for-the-badge)
+![NPM](https://img.shields.io/npm/l/@itchef/rg-cli?style=for-the-badge)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -26,24 +27,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rg generate`](#rg-generate)
-* [`rg help [COMMAND]`](#rg-help-command)
-* [`rg new APPNAME`](#rg-new-appname)
+- [@itchef/rg-cli](#itchefrg-cli)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`rg generate`](#rg-generate)
+  - [`rg help [COMMAND]`](#rg-help-command)
+  - [`rg new APPNAME`](#rg-new-appname)
+  - [License](#license)
+      - [The MIT License](#the-mit-license)
 
 ## `rg generate`
 
-Describe the command here
+Generate new files. Such as components, modules etc.
 
 ```
 USAGE
   $ rg generate
 
-OPTIONS
-  -n, --name=name  name to print
+Arguments
+  task  name of the task
+  name  generator name
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  Currently we are only supporting COMPONENT generation task.
 ```
 
 _See code: [src/commands/generate.js](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/generate.js)_
