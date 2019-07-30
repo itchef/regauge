@@ -36,7 +36,10 @@
   ],
   "homepage": "https://itchef.github.io/rg-cli",
   "keywords": [
-    "oclif"
+    "oclif",
+    "react",
+    "cli",
+    "rg-cli"
   ],
   "license": "MIT",
   "main": "src/index.js",
