@@ -9,7 +9,6 @@ const siteConfig = {
     { doc: "introduction", label: "DOCUMENTATION" },
     { href: "https://github.com/itchef/rg-cli", label: "GITHUB" }
   ],
-
   headerIcon: "img/Logo-rg-light.png",
   footerIcon: "img/Logo-rg-light.png",
   favicon: "img/favicon.ico",
@@ -42,10 +41,10 @@ const siteConfig = {
 
   onPageNav: "separate",
   cleanUrl: true,
-
   enableUpdateTime: true,
   scrollToTop: true,
   docsSideNavCollapsible: true,
+  enableUpdateBy: true,
   homePage: {
     commands: [
       {
