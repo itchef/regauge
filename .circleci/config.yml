@@ -13,17 +13,15 @@ jobs:
             - v1-npm-{{checksum ".circleci/config.yml"}}
       - run:
           name: Install dependencies
-          command: yarn
+          command: npm
       - run: ./bin/run --version
       - run: ./bin/run --help
       - run:
           name: Testing
           command: npm test
       - run:
-          name: Submitting code coverage to codecov
-          command: |
-            ./node_modules/.bin/nyc report --reporter text-lcov > coverage.lcov
-            curl -s https://codecov.io/bash | bash
+          name: Publishing the latest website
+          command: cd ./docusaurus/website && npm run publish-gh-pages
   node-8:
     <<: *test
     docker:
