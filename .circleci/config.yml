@@ -26,13 +26,16 @@ jobs:
   gh-pages:
     docker:
       - image: node:11
-    working_directory: ~/cli/docusaurus/website
+    working_directory: ~/cli
     steps:
       - checkout
       - restore_cache: &restore_cache
           keys:
             - v1-npm-{{checksum ".circleci/config.yml"}}-{{checksum "package-lock.json"}}
             - v1-npm-{{checksum ".circleci/config.yml"}}
+      - run:
+          name: Go to website dir
+          command: cd ./docusaurus/website
       - run:
           name: Install dependencies
           command: npm install
