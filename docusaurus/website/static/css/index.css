@@ -79,6 +79,10 @@
   max-width: 750px;
 }
 
+.featureWrapper {
+  padding-bottom: 30px;
+}
+
 .featureWrapper h3 {
   color: $primaryColor;
 }

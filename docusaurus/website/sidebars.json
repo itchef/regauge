@@ -5,6 +5,10 @@
       "getting-started",
       "folder-structure-for-new-app",
       "npm-scripts"
+    ],
+    "CLI COMMANDS": [
+      "cli-command-new",
+      "cli-command-generate"
     ]
   }
 }
