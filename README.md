@@ -4,6 +4,7 @@
 A CLI tool to create and manage initial react project
 
 [![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/@itchef/rg-cli)
+[![CircleCI](https://img.shields.io/circleci/build/github/itchef/rg-cli?style=for-the-badge&cacheSeconds=360&logo=CircleCi&circle-token=ae9a68f7db509eb9281e2890eac3f50af93dabd9)](https://circleci.com/gh/itchef/rg-cli)
 [![DOWNLOADS](https://img.shields.io/npm/dm/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/@itchef/rg-cli)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://bundlephobia.com/result?p=@itchef/rg-cli)
 [![LICENSE](https://img.shields.io/npm/l/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)
