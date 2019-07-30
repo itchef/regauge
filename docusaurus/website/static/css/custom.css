@@ -17,6 +17,17 @@
   background: $secondaryColor;
 }
 
+.fixedHeaderContainer a h3 {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.fixedHeaderContainer a h3:hover {
+  text-decoration: underline;
+}
+
 .nav-site li {
   margin-left: 20px !important;
 }
