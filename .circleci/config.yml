@@ -21,7 +21,7 @@ jobs:
           command: npm test
       - run:
           name: Publishing the latest website
-          command: cd ./docusaurus/website && npm run publish-gh-pages
+          command: cd ./docusaurus/website && npm install && npm run publish-gh-pages
   node-10:
     <<: *test
     docker:
