@@ -3,7 +3,7 @@ version: 2
 jobs:
   node-latest: &test
     docker:
-      - image: node:latest
+      - image: node:11
     working_directory: ~/cli
     steps:
       - checkout
@@ -13,7 +13,7 @@ jobs:
             - v1-npm-{{checksum ".circleci/config.yml"}}
       - run:
           name: Install dependencies
-          command: npm
+          command: npm install
       - run: ./bin/run --version
       - run: ./bin/run --help
       - run:
@@ -25,10 +25,6 @@ jobs:
   node-8:
     <<: *test
     docker:
-      - image: node:8
-  node-10:
-    <<: *test
-    docker:
       - image: node:10
   cache:
     <<: *test
@@ -36,7 +32,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: yarn
+          command: npm install
       - save_cache:
           key: v1-npm-{{checksum ".circleci/config.yml"}}-{{checksum "package-lock.json"}}
           paths:
@@ -48,8 +44,6 @@ workflows:
   version: 2
   "@itchef/rg-cli":
     jobs:
-      - node-latest
-      - node-8
       - node-10
       - cache:
           filters:
