@@ -22,7 +22,7 @@ $ npm install -g @itchef/rg-cli
 $ rg COMMAND
 running command...
 $ rg (-v|--version|version)
-@itchef/rg-cli/0.1.0 darwin-x64 node-v11.5.0
+@itchef/rg-cli/0.2.0 darwin-x64 node-v11.5.0
 $ rg --help [COMMAND]
 USAGE
   $ rg COMMAND
@@ -31,32 +31,34 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-- [@itchef/rg-cli](#itchefrg-cli)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`rg generate`](#rg-generate)
-  - [`rg help [COMMAND]`](#rg-help-command)
-  - [`rg new APPNAME`](#rg-new-appname)
-  - [License](#license)
-      - [The MIT License](#the-mit-license)
+* [`rg generate GENERATOR NAME`](#rg-generate-generator-name)
+* [`rg help [COMMAND]`](#rg-help-command)
+* [`rg new APPNAME`](#rg-new-appname)
 
-## `rg generate`
+## `rg generate GENERATOR NAME`
 
 Generate new files. Such as components, modules etc.
 
 ```
 USAGE
-  $ rg generate
+  $ rg generate GENERATOR NAME
 
-Arguments
-  task  name of the task
-  name  generator name
+ARGUMENTS
+  GENERATOR  (component) What you want to generate
+  NAME       Name of the generated element
 
-DESCRIPTION
-  Currently we are only supporting COMPONENT generation task.
+OPTIONS
+  -h, --help  show CLI help
+
+ALIASES
+  $ rg g
+
+EXAMPLES
+  $ rg generate component COMPONENT
+  $ rg g c COMPONENT
 ```
 
-_See code: [src/commands/generate.js](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/generate.js)_
+_See code: [src/commands/generate.js](https://github.com/ITChef/rg-cli/blob/v0.2.0/src/commands/generate.js)_
 
 ## `rg help [COMMAND]`
 
@@ -90,7 +92,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.1.0/src/commands/new.js)_
+_See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.2.0/src/commands/new.js)_
 <!-- commandsstop -->
 
 ## License
