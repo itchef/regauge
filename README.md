@@ -12,12 +12,13 @@ A CLI tool to create and manage initial react project bundled with webpack, pret
 [![WEBSITE](https://img.shields.io/badge/Official-Website-blue?style=for-the-badge&cacheSeconds=360)
 ](https://itchef.github.io/rg-cli)
 
-<!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
-<!-- tocstop -->
+* [Contributing](#contributing)
+* [License](#license)
+
 # Usage
-<!-- usage -->
+
 ```sh-session
 $ npm install -g @itchef/rg-cli
 $ rg COMMAND
@@ -29,17 +30,7 @@ USAGE
   $ rg COMMAND
 ...
 ```
-<!-- usagestop -->
 # Commands
-<!-- commands -->
-- [@itchef/rg-cli](#itchefrg-cli)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`rg generate GENERATOR NAME`](#rg-generate-generator-name)
-  - [`rg help [COMMAND]`](#rg-help-command)
-  - [`rg new APPNAME`](#rg-new-appname)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## `rg generate GENERATOR NAME`
 
