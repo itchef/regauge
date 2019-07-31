@@ -38,9 +38,8 @@ USAGE
   - [`rg generate GENERATOR NAME`](#rg-generate-generator-name)
   - [`rg help [COMMAND]`](#rg-help-command)
   - [`rg new APPNAME`](#rg-new-appname)
-  - [Contributing](#contributing)
-  - [License](#license)
-      - [The MIT License](#the-mit-license)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## `rg generate GENERATOR NAME`
 
@@ -102,11 +101,12 @@ OPTIONS
 _See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.2.0/src/commands/new.js)_
 <!-- commandsstop -->
 
-## Contributing
+# Contributing
 
 Read our [contributing guide](./CONTRIBUTING.md) and let's build a better rg-cli together.
 
 We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/itchef/rg-cli/pulls) or as [GitHub issues](https://github.com/itchef/rg-cli/issues).
 
-## License
-#### The MIT License
+# License
+
+**The MIT License**
