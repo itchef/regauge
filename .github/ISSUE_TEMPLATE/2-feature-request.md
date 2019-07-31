@@ -10,15 +10,15 @@ To make this wonderful feature more relevant, please take a look at our open and
 
 # 🚀 feature request
 
-### 🎯Target packages
+### Target packages
 <!-- Could you please point out one or more @itchef/rg-cli packages the are relevant for this feature request? -->
 This feature request is for ....
 
-### 📝Brief description about the feature
+### Brief description about the feature
 A brief description of the problem or missing functionality...
 
-### 🤔 Why is it relevant?
+### Why is it relevant?
 This functionality is relevant because....
 
-### 📔 Describe the solution(s) you'd like _(including alternatives)_
+### Describe the solution(s) you'd like _(including alternatives)_
 If you have a solution in mind, please describe it.
