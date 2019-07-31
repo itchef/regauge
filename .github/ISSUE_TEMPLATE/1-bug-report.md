@@ -1,6 +1,6 @@
 ---
 name: "🐞 Bug report"
-about: Report a bug in rg-cli
+about: Report a bug in @itchef/rg-cli
 ---
 
 # 🐞 bug report
