@@ -1,6 +1,7 @@
 const siteConfig = {
   title: "rg-cli",
-  tagline: "A command line interface for react app with webpack",
+  tagline:
+    "A command line interface for react app bundled with webpack, prettier and many more",
   url: "https://itchef.github.io",
   baseUrl: "/rg-cli/",
   projectName: "rg-cli",

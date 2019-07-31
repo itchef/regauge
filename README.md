@@ -1,7 +1,7 @@
 @itchef/rg-cli
 ==============
 
-A CLI tool to create and manage initial react project
+A CLI tool to create and manage initial react project bundled with webpack, prettier and many more.
 
 [![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/@itchef/rg-cli)
 [![CircleCI](https://img.shields.io/circleci/build/github/itchef/rg-cli?style=for-the-badge&cacheSeconds=360&logo=CircleCi&circle-token=ae9a68f7db509eb9281e2890eac3f50af93dabd9)](https://circleci.com/gh/itchef/rg-cli)
@@ -32,9 +32,15 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rg generate GENERATOR NAME`](#rg-generate-generator-name)
-* [`rg help [COMMAND]`](#rg-help-command)
-* [`rg new APPNAME`](#rg-new-appname)
+- [@itchef/rg-cli](#itchefrg-cli)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`rg generate GENERATOR NAME`](#rg-generate-generator-name)
+  - [`rg help [COMMAND]`](#rg-help-command)
+  - [`rg new APPNAME`](#rg-new-appname)
+  - [Contributing](#contributing)
+  - [License](#license)
+      - [The MIT License](#the-mit-license)
 
 ## `rg generate GENERATOR NAME`
 
