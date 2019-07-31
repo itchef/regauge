@@ -1,6 +1,10 @@
 # Contributing
 The following is a set of guidelines for contributing to rg-cli. Please spend few minutes in reading these guidelines before you create an issue or pull request.
 
+## Code of Conduct
+
+We have adopted a [Code of Conduct](./CODE_OF_CONDUCT.md) that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+
 ## Open Development
 
 All code level work for rg-cli happens on [Github](https://github.com/itchef/rg-cli). External contributors are welcome to send pull requests which will go through the review process by the core team.
