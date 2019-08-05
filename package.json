@@ -1,7 +1,7 @@
 {
   "name": "regauge",
   "description": "A CLI tool to create and manage initial react project gauged with webpack and many more.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
     "rg": "./bin/run"
