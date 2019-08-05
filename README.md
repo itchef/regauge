@@ -1,16 +1,17 @@
-@itchef/rg-cli
+regauge
 ==============
 
 A CLI tool to create and manage initial react project bundled with webpack, prettier and many more.
 
-[![npm](https://img.shields.io/npm/v/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/@itchef/rg-cli)
-[![CircleCI](https://img.shields.io/circleci/build/github/itchef/rg-cli?style=for-the-badge&cacheSeconds=360&logo=CircleCi&circle-token=ae9a68f7db509eb9281e2890eac3f50af93dabd9)](https://circleci.com/gh/itchef/rg-cli)
-[![DOWNLOADS](https://img.shields.io/npm/dm/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/@itchef/rg-cli)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)](https://bundlephobia.com/result?p=@itchef/rg-cli)
-[![LICENSE](https://img.shields.io/npm/l/@itchef/rg-cli?style=for-the-badge&cacheSeconds=360)
+[![npm](https://img.shields.io/npm/v/regauge?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/regauge)
+[![CircleCI](https://img.shields.io/circleci/build/github/itchef/regauge?style=for-the-badge&cacheSeconds=360&logo=CircleCi&circle-token=ae9a68f7db509eb9281e2890eac3f50af93dabd9)](https://circleci.com/gh/itchef/regauge)
+[![DOWNLOADS](https://img.shields.io/npm/dm/regauge?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/regauge)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/regauge?style=for-the-badge&cacheSeconds=360)](https://bundlephobia.com/result?p=regauge)
+[![LICENSE](https://img.shields.io/npm/l/regauge?style=for-the-badge&cacheSeconds=360)
 ](./LICENSE)
 [![WEBSITE](https://img.shields.io/badge/Official-Website-blue?style=for-the-badge&cacheSeconds=360)
-](https://itchef.github.io/rg-cli)
+](https://itchef.github.io/regauge)
+[![CHAT](https://img.shields.io/gitter/room/itchef/regauge?style=for-the-badge)](https://gitter.im/Itcheforg/regauge)
 
 * [Usage](#usage)
 * [Commands](#commands)
@@ -20,11 +21,11 @@ A CLI tool to create and manage initial react project bundled with webpack, pret
 # Usage
 
 ```sh-session
-$ npm install -g @itchef/rg-cli
+$ npm install -g regauge
 $ rg COMMAND
 running command...
 $ rg (-v|--version|version)
-@itchef/rg-cli/0.2.0 darwin-x64 node-v11.5.0
+regauge/0.2.0 darwin-x64 node-v11.5.0
 $ rg --help [COMMAND]
 USAGE
   $ rg COMMAND
@@ -55,7 +56,7 @@ EXAMPLES
   $ rg g c COMPONENT
 ```
 
-_See code: [src/commands/generate.js](https://github.com/ITChef/rg-cli/blob/v0.2.0/src/commands/generate.js)_
+_See code: [src/commands/generate.js](https://github.com/ITChef/regauge/blob/v0.2.0/src/commands/generate.js)_
 
 ## `rg help [COMMAND]`
 
@@ -76,7 +77,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6
 
 ## `rg new APPNAME`
 
-To generate a new rg-cli project.
+To generate a new regauge project.
 
 ```
 USAGE
@@ -89,14 +90,14 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.js](https://github.com/ITChef/rg-cli/blob/v0.2.0/src/commands/new.js)_
+_See code: [src/commands/new.js](https://github.com/ITChef/regauge/blob/v0.2.0/src/commands/new.js)_
 <!-- commandsstop -->
 
 # Contributing
 
-Read our [contributing guide](./CONTRIBUTING.md) and let's build a better rg-cli together.
+Read our [contributing guide](./CONTRIBUTING.md) and let's build a better regauge together.
 
-We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/itchef/rg-cli/pulls) or as [GitHub issues](https://github.com/itchef/rg-cli/issues).
+We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/itchef/regauge/pulls) or as [GitHub issues](https://github.com/itchef/regauge/issues).
 
 # License
 

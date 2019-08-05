@@ -1,6 +1,6 @@
 ---
 name: "🐞 Bug report"
-about: Report a bug in @itchef/rg-cli
+about: Report a bug in regauge
 ---
 
 # 🐞 bug report
@@ -8,7 +8,7 @@ about: Report a bug in @itchef/rg-cli
 <!-- Before you reporting a bug, please take a look at our issue section to make sure there is no duplicate issue present. -->
 
 ### Affected Package
-<!-- Could you please point out one or more rg-cli or @itchef/* packages as the source of the bug? -->
+<!-- Could you please point out one or more regauge or @itchef/* packages as the source of the bug? -->
 <!-- ✍️ edit: --> The issue is caused by package @itchef/....
 
 
@@ -19,7 +19,7 @@ Yes, the previous version in which this bug was not present was: ....
 
 ### Possible affected versions:
 
-<!-- Please note the possible affected rg-cli versions. -->
+<!-- Please note the possible affected regauge versions. -->
 The affected versions are: .... 
 
 ### Description
@@ -41,7 +41,7 @@ Please share the reproduction steps by which we can identify the issue. Adding a
 
 ## 🌏 Your Environment
 
-**rg-cli Version:**
+**regauge Version:**
 <pre><code>
 <!-- run `rg --version` and paste output below -->
 

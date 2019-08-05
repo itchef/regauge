@@ -14,8 +14,8 @@ This docs assume that you are already familiar with HTML, CSS, JavaScript and so
 
 #### We are loved to hear from you.
 
-We want to hear active feedback from you. [Report problems or provide us some suggestion](https://github.com/itchef/rg-cli/issues) to make this docs more reader friendly.
+We want to hear active feedback from you. [Report problems or provide us some suggestion](https://github.com/itchef/regauge/issues) to make this docs more reader friendly.
 
-Contribute to React Generator CLI docs by creating [pull requests](https://github.com/itchef/rg-cli/pulls) on the React Generator CLI Github repository.
+Contribute to React Generator CLI docs by creating [pull requests](https://github.com/itchef/regauge/pulls) on the React Generator CLI Github repository.
 
 

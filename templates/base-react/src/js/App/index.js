@@ -16,7 +16,7 @@ export default class App extends PureComponent {
           <br />
               To know more visit
           {' '}
-          <a href="https://github.com/itchef/rg-cli">rg-cli</a>
+          <a href="https://github.com/itchef/regauge">regauge</a>
 .
         </div>
       </div>

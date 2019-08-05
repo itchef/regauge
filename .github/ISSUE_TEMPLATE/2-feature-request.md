@@ -1,6 +1,6 @@
 ---
 name: "✈️ Feature request"
-about: Suggest a feature for @itchef/rg-cli
+about: Suggest a feature for regauge
 
 ---
 <!-- Hello! ☺️ 
@@ -11,7 +11,7 @@ To make this wonderful feature more relevant, please take a look at our open and
 # 🚀 feature request
 
 ### Target packages
-<!-- Could you please point out one or more @itchef/rg-cli packages the are relevant for this feature request? -->
+<!-- Could you please point out one or more regauge packages the are relevant for this feature request? -->
 This feature request is for ....
 
 ### Brief description about the feature

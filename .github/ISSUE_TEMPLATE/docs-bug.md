@@ -1,6 +1,6 @@
 ---
-name: "📚 Docs or itchef.github.com/rg-cli issue report"
-about: Report an issue in rg-cli's documentation or website.
+name: "📚 Docs or itchef.github.com/regauge issue report"
+about: Report an issue in regauge's documentation or website.
 
 ---
 <!-- Hello! ☺️ 
@@ -8,7 +8,7 @@ about: Report an issue in rg-cli's documentation or website.
 To make this important issue more relevant, please take a look at our open and closed issues before submitting this one. Who knows you might find a mate who is also worried about the same bug. Also it might contain the information regarding workarounds, resolution, or progress updates.
 -->
 
-# 📚 Docs or itchef.github.com/rg-cli bug report
+# 📚 Docs or itchef.github.com/regauge bug report
 
 ### Description
 
@@ -22,7 +22,7 @@ Please share the reproduction steps by which we can identify the issue. Adding a
 
 
 ### What's the affected URL?**
-https://itchef.github.io/rg-cli/...
+https://itchef.github.io/regauge/...
 
 ## 🚨 Error
 

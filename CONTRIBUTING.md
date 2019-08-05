@@ -1,5 +1,5 @@
 # Contributing
-The following is a set of guidelines for contributing to rg-cli. Please spend few minutes in reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to regauge. Please spend few minutes in reading these guidelines before you create an issue or pull request.
 
 ## Code of Conduct
 
@@ -7,7 +7,7 @@ We have adopted a [Code of Conduct](./CODE_OF_CONDUCT.md) that we expect project
 
 ## Open Development
 
-All code level work for rg-cli happens on [Github](https://github.com/itchef/rg-cli). External contributors are welcome to send pull requests which will go through the review process by the core team.
+All code level work for regauge happens on [Github](https://github.com/itchef/regauge). External contributors are welcome to send pull requests which will go through the review process by the core team.
 
 ## Branch Organization
 
@@ -15,9 +15,9 @@ We follow the trunk based development. Hence we maintain only single branch `mas
 
 ## Bugs & Features
 
-We are using [GitHub Issues](https://github.com/itchef/rg-cli/issues) for bug and feature tracing. The best way to contribute with bug fixes is by creating a new bug using this [template](https://github.com/itchef/rg-cli/issues/new?template=1-bug-report.md).
+We are using [GitHub Issues](https://github.com/itchef/regauge/issues) for bug and feature tracing. The best way to contribute with bug fixes is by creating a new bug using this [template](https://github.com/itchef/regauge/issues/new?template=1-bug-report.md).
 
-If You want to propose a new feature, please use this [feature template](https://github.com/itchef/rg-cli/issues/new?template=2-feature-request.md) to create a new feature request.
+If You want to propose a new feature, please use this [feature template](https://github.com/itchef/regauge/issues/new?template=2-feature-request.md) to create a new feature request.
 
 ## Your First Pull Request
 
@@ -47,6 +47,6 @@ The [core team](https://github.com/orgs/itchef/people) is monitoring for pull re
 
 After cloning antd, run `npm install` to fetch its dependencies. Then, you can run several commands:
 
-1. `./bin/run COMMAND`. Check all cli commands [here](https://itchef.github.io/rg-cli/docs/cli-command-new).
+1. `./bin/run COMMAND`. Check all cli commands [here](https://itchef.github.io/regauge/docs/cli-command-new).
 2. `npm test` runs the complete test suite.
 3. `npm version` shows the latest released version of the application.

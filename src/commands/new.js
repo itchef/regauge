@@ -34,7 +34,7 @@ class NewCommand extends Command {
   }
 }
 
-NewCommand.description = 'To generate a new rg-cli project.'
+NewCommand.description = 'To generate a new regauge project.'
 
 NewCommand.args = [
   {

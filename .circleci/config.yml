@@ -58,7 +58,7 @@ jobs:
 
 workflows:
   version: 2
-  "@itchef/rg-cli":
+  "regauge":
     jobs:
       - node-latest
       - node-10

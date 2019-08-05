@@ -1,12 +1,12 @@
 {
-  "name": "@itchef/rg-cli",
-  "description": "A CLI tool to create and manage initial react project",
+  "name": "regauge",
+  "description": "A CLI tool to create and manage initial react project gauged with webpack and many more.",
   "version": "0.2.0",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
     "rg": "./bin/run"
   },
-  "bugs": "https://github.com/ITChef/rg-cli/issues",
+  "bugs": "https://github.com/ITChef/regauge/issues",
   "dependencies": {
     "@itchef/rg-lib": "git+https://git@github.com/itchef/rg-lib.git",
     "@oclif/command": "1.5.13",
@@ -34,12 +34,12 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://itchef.github.io/rg-cli",
+  "homepage": "https://itchef.github.io/regauge",
   "keywords": [
     "oclif",
     "react",
     "cli",
-    "rg-cli"
+    "regauge"
   ],
   "license": "MIT",
   "main": "src/index.js",
@@ -50,7 +50,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "ITChef/rg-cli",
+  "repository": "ITChef/regauge",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "oclif-dev manifest && oclif-dev readme",

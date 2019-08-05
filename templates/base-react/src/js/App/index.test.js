@@ -15,6 +15,6 @@ describe('<App />', () => {
   });
 
   it('should have footer message', () => {
-    expect(wrapper.find('.app__footer').text()).toEqual('Your app has been created. To know more visit rg-cli.');
+    expect(wrapper.find('.app__footer').text()).toEqual('Your app has been created. To know more visit regauge.');
   });
 });

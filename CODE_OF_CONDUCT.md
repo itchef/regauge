@@ -9,6 +9,8 @@ size, disability, ethnicity, sex characteristics, gender identity and expression
 level of experience, education, socio-economic status, nationality, personal
 appearance, race, religion, or sexual identity and orientation.
 
+Communication through any of Angular's channels (GitHub, Gitter, mailing lists etc.) must be constructive and never resort to personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
+
 ## Our Standards
 
 Examples of behavior that contributes to creating a positive environment

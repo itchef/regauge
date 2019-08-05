@@ -1,14 +1,14 @@
 const siteConfig = {
-  title: "rg-cli",
+  title: "regauge",
   tagline:
     "A command line interface for react app bundled with webpack, prettier and many more",
   url: "https://itchef.github.io",
-  baseUrl: "/rg-cli/",
-  projectName: "rg-cli",
+  baseUrl: "/regauge/",
+  projectName: "regauge",
   organizationName: "itchef",
   headerLinks: [
     { doc: "introduction", label: "DOCUMENTATION" },
-    { href: "https://github.com/itchef/rg-cli", label: "GITHUB" }
+    { href: "https://github.com/itchef/regauge", label: "GITHUB" }
   ],
   headerIcon: "img/Logo-rg-light.png",
   footerIcon: "img/Logo-rg-light.png",
@@ -28,7 +28,7 @@ const siteConfig = {
   },
   license: {
     name: "MIT-styled",
-    link: "https://github.com/itchef/rg-cli/blob/master/LICENSE"
+    link: "https://github.com/itchef/regauge/blob/master/LICENSE"
   },
   author: {
     name: "Kaustav Chakraborty",
