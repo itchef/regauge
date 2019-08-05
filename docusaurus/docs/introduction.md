@@ -1,10 +1,9 @@
 ---
 id: introduction
-title: Introduction to React Generator CLI
+title: Introduction to regauge
 ---
 
-These React Generator CLI docs help you to learn and use the React platform and framework, from your first app to configurable and complex applications. 
-
+These `regauge` docs help you to learn and use the React platform and framework, from your first app to configurable and complex applications.
 
 ### Assumptions
 
@@ -16,6 +15,6 @@ This docs assume that you are already familiar with HTML, CSS, JavaScript and so
 
 We want to hear active feedback from you. [Report problems or provide us some suggestion](https://github.com/itchef/regauge/issues) to make this docs more reader friendly.
 
-Contribute to React Generator CLI docs by creating [pull requests](https://github.com/itchef/regauge/pulls) on the React Generator CLI Github repository.
+Contribute to regauge docs by creating [pull requests](https://github.com/itchef/regauge/pulls) on the regauge Github repository.
 
 

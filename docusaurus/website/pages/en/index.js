@@ -48,7 +48,7 @@ const SplashContainer = props => (
 
 const ProjectTitle = () => (
   <h5 className="projectTitle">
-    React Generator CLI
+    regauge
     <small className="projectTagLine">{siteConfig.tagline}</small>
   </h5>
 );

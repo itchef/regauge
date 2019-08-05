@@ -51,7 +51,7 @@ const siteConfig = {
       {
         title: "rg new",
         description:
-          "The React Generator CLI makes it easy to create a react application with webpack that already works, right out of the box. It already follows react’s best practices!"
+          "The regauge makes it easy to create a react application with webpack that already works, right out of the box. It already follows react’s best practices!"
       },
       {
         title: "rg generate",

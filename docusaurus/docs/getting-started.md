@@ -3,7 +3,7 @@ id: getting-started
 title: Getting Started
 ---
 
-React Generator CLI is a CLI tool to generate your working React application with minimal and important configurations. It is not an officially supported CLI tool for React application. To generate a project, you no need any additional configuration.
+`regauge` is a CLI tool to generate your working React application with minimal and important configurations. It is not an officially supported CLI tool for React application. To generate a project, you no need any additional configuration.
 
 ## Quick Start
 
