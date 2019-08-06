@@ -32,7 +32,8 @@
     "/bin",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json",
-    "/src"
+    "/src",
+    "/templates"
   ],
   "homepage": "https://itchef.github.io/regauge",
   "keywords": [
