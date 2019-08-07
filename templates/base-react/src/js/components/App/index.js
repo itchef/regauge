@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import './index.scss';
-import logo from '../../assets/images/Logo.png';
+import logo from '../../../assets/images/Logo.png';
 
 export default class App extends PureComponent {
   render() {
