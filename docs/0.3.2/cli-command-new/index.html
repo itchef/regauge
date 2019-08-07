@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>rg new · regauge</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Creates a new workspace and an initial React App along with webpack bundled with it."/><meta name="docsearch:version" content="0.3.2"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="rg new · regauge"/><meta property="og:type" content="website"/><meta property="og:url" content="https://itchef.github.io/regauge/"/><meta property="og:description" content="Creates a new workspace and an initial React App along with webpack bundled with it."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/regauge/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/regauge/js/scrollSpy.js"></script><link rel="stylesheet" href="/regauge/css/main.css"/><script src="/regauge/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/regauge/"><img class="logo" src="/regauge/img/Logo-rg-light.png" alt="regauge"/><h2 class="headerTitleWithLogo">regauge</h2></a><a href="/regauge/versions"><h3>0.3.2</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/regauge/docs/0.3.2/introduction" target="_self">DOCUMENTATION</a></li><li class=""><a href="https://github.com/itchef/regauge" target="_self">GITHUB</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>CLI COMMANDS</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">INTRODUCTION<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/regauge/docs/0.3.2/introduction">Introduction to regauge</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">GETTING STARTED<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/regauge/docs/0.3.2/getting-started">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/regauge/docs/0.3.2/folder-structure-for-new-app">Folder Structure</a></li><li class="navListItem"><a class="navItem" href="/regauge/docs/0.3.2/npm-scripts">Scripts</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">CLI COMMANDS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/regauge/docs/0.3.2/cli-command-new">rg new</a></li><li class="navListItem"><a class="navItem" href="/regauge/docs/0.3.2/cli-command-generate">rg generate</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">rg new</h1></header><article><div><span><p>Creates a new workspace and an initial React App along with webpack bundled with it.</p>
+<p>rg <strong>new</strong> <code>&lt;app_name&gt;</code></p>
+<h2><a class="anchor" aria-hidden="true" id="description"></a><a href="#description" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description</h2>
+<p>It creates and initializes a new React application that is a default project of the new workspace.</p>
+<p>Also it provides interactive prompts for the initial <em>(Optional)</em> configuration, such as <em>Author Name</em>. All prompt can be allowed to default.</p>
+<ul>
+<li><p>The workspace folder is given the specified project name and contain other configuration files on the same level. <em>(We are going to refer this as root)</em></p></li>
+<li><p>By default the files which gets generates in the workspace directory can be found on <a href="/regauge/docs/0.3.2/folder-structure-for-new-app">folder structure</a>.</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="arguments"></a><a href="#arguments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Arguments</h2>
+<table>
+<thead>
+<tr><th>Argument</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><em>name</em></td><td>The name of the new workspace and initial project.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 7/30/2019 by Kaustav Chakraborty</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/regauge/docs/0.3.2/npm-scripts"><span class="arrow-prev">← </span><span>Scripts</span></a><a class="docs-next button" href="/regauge/docs/0.3.2/cli-command-generate"><span>rg generate</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#description">Description</a></li><li><a href="#arguments">Arguments</a></li></ul></nav></div><footer class="nav-footer rg-footer" id="footer"><div class="footerContainer"><section class="rg-copyright">Copyright © 2019 <a class="rg-link" href="https://github.com/itchef">ITChef</a>. <span class="rg-author">Authored by <a class="rg-link" href="https://github.com/phoenixTW">Kaustav Chakraborty</a>.</span></section><section class="rg-license-container">Code licensed under an <a class="rg-link" href="https://github.com/itchef/regauge/blob/master/LICENSE">MIT-styled</a> License.</section></div></footer></div></body></html>
