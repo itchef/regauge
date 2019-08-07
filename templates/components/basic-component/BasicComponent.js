@@ -5,7 +5,7 @@ class COMPONENT_NAME extends Component {
   render() {
     return (
       <div>
-        $COMPONENT_NAME rendered successfully
+        COMPONENT_NAME rendered successfully
       </div>
     )
   };
