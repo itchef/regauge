@@ -102,9 +102,6 @@ const Versions = props => {
       <Master config={siteConfig} repo={repoUrl} branch="master">
         Latest Version <i>(Unreleased)</i>
       </Master>
-      <PastVersions config={siteConfig} latest={latestVersion}>
-        Past versions
-      </PastVersions>
       <p>
         You can find past versions of this project on{" "}
         <a href={`${repoUrl}/releases`}>GitHub</a>.
