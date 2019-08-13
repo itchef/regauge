@@ -1,12 +1,13 @@
 const path = require("path");
 const { Dir, File, Logger } = require("@itchef/rg-lib");
 const { execSync } = require("child_process");
+const { ClassCase, kebabCase } = require("../utils/dev-kit/helpers");
 
 const updateWithName = (componentPath, name, template) => {
-  const newComponentPath = componentPath.replace(template, name.toLowerCase());
+  const newComponentPath = componentPath.replace(template, name);
   new File(componentPath)
     .read()
-    .update("COMPONENT_NAME", name)
+    .update("COMPONENT_NAME", ClassCase(name))
     .write(newComponentPath);
 };
 
@@ -36,7 +37,7 @@ const generateComponent = (name, { temp, templates }) => {
     src: path.join(templates._dirName, "components/basic-component"),
     template: "BasicComponent",
     copyFrom: temp,
-    dest: path.join(process.cwd(), name)
+    dest: path.join(process.cwd(), kebabCase(name, true))
   };
 
   generator(name, config);
