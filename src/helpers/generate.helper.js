@@ -17,38 +17,42 @@ const copyBaseFiles = (basicComponentDir, temp) => {
     .forEach(filePath => new Dir(filePath).copy(temp));
 };
 
+const generator = (name, config) => {
+  Logger.info(`${name} ${config.type} is getting created into ${config.dest}`);
+
+  config.tmp.cd();
+  copyBaseFiles(config.src, config.tmp._dirName);
+  config.tmp.read().map(file => updateWithName(file, name, config.template));
+  execSync(`rm ${config.tmp._dirName}/${config.template}*`);
+  new Dir(config.copyFrom).copy(config.dest);
+
+  config.tmp.clean();
+};
+
 const generateComponent = (name, { temp, templates }) => {
-  const workingDirectory = process.cwd();
-  Logger.info(`${name} component is getting created into ${workingDirectory}`);
-  new Dir(temp).cd();
-  let basicComponentDir = path.join(
-    templates._dirName,
-    "components/basic-component"
-  );
-  copyBaseFiles(basicComponentDir, temp);
-  new Dir(temp)
-    .read()
-    .map(file => updateWithName(file, name, "BasicComponent"));
-  execSync(`rm ${temp}/BasicComponent*`);
-  new Dir(temp).copy(path.join(workingDirectory, name));
-  new Dir(temp).clean();
+  const config = {
+    type: "component",
+    tmp: new Dir(temp),
+    src: path.join(templates._dirName, "components/basic-component"),
+    template: "BasicComponent",
+    copyFrom: temp,
+    dest: path.join(process.cwd(), name)
+  };
+
+  generator(name, config);
 };
 
 const generateStyle = (name, { temp, templates }) => {
-  const workingDirectory = process.cwd();
-  const tempDir = new Dir(temp);
-  const folder = "styles";
-  const templateInitial = "style";
-  const styles = path.join(templates._dirName, folder);
+  const config = {
+    type: "style",
+    tmp: new Dir(temp),
+    src: path.join(templates._dirName, "styles"),
+    template: "style",
+    copyFrom: path.join(temp, `${name}*`),
+    dest: process.cwd()
+  };
 
-  Logger.info(`${name} style is getting created into ${workingDirectory}`);
-
-  tempDir.cd();
-  copyBaseFiles(styles, temp);
-  tempDir.read().map(file => updateWithName(file, name, templateInitial));
-  execSync(`rm ${temp}/${templateInitial}*`);
-  new Dir(`${temp}/${name}*`).copy(workingDirectory);
-  new Dir(temp).clean();
+  generator(name, config);
 };
 
 module.exports = {
