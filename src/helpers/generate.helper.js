@@ -3,6 +3,10 @@ const { Dir, File, Logger } = require("@itchef/rg-lib");
 const { execSync } = require("child_process");
 const { ClassCase, kebabCase } = require("../utils/dev-kit/helpers");
 
+const styles = {
+  SCSS: "scss"
+};
+
 const updateWithName = (componentPath, name, template) => {
   const newComponentPath = componentPath.replace(template, name);
   new File(componentPath)
@@ -27,10 +31,12 @@ const generator = (name, config) => {
   execSync(`rm ${config.tmp._dirName}/${config.template}*`);
   new Dir(config.copyFrom).copy(config.dest);
 
-  config.tmp.clean();
+  if (config.cleanTmp) {
+    config.tmp.clean();
+  }
 };
 
-const generateComponent = (name, { temp, templates }) => {
+const generateComponent = (name, { temp, templates }, { style: styleFlag }) => {
   const config = {
     type: "component",
     tmp: new Dir(temp),
@@ -40,7 +46,21 @@ const generateComponent = (name, { temp, templates }) => {
     dest: path.join(process.cwd(), kebabCase(name, true))
   };
 
+  const styleConfig = {
+    type: "style",
+    tmp: new Dir(temp),
+    src: path.join(templates._dirName, "styles"),
+    template: "style",
+    copyFrom: path.join(temp, `${name}*`),
+    dest: path.join(process.cwd(), kebabCase(name, true)),
+    cleanTmp: true
+  };
+
   generator(name, config);
+
+  if (styleFlag === styles.SCSS) {
+    generator(name, styleConfig);
+  }
 };
 
 const generateStyle = (name, { temp, templates }) => {
@@ -50,7 +70,8 @@ const generateStyle = (name, { temp, templates }) => {
     src: path.join(templates._dirName, "styles"),
     template: "style",
     copyFrom: path.join(temp, `${name}*`),
-    dest: process.cwd()
+    dest: process.cwd(),
+    cleanTmp: true
   };
 
   generator(name, config);

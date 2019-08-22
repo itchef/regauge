@@ -13,8 +13,8 @@ class GenerateCommand extends Command {
       style: generateStyle,
       s: generateStyle
     };
-    const { args } = this.parse(GenerateCommand);
-    generators[args.generator](args.name, bootstrap);
+    const { args, flags } = this.parse(GenerateCommand);
+    generators[args.generator](args.name, bootstrap, flags);
   }
 }
 
@@ -43,7 +43,8 @@ GenerateCommand.examples = [
 GenerateCommand.aliases = ["g"];
 
 GenerateCommand.flags = {
-  help: flags.help({ char: "h" })
+  help: flags.help({ char: "h" }),
+  style: flags.string(),
 };
 
 module.exports = GenerateCommand;
