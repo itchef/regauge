@@ -44,7 +44,11 @@ GenerateCommand.aliases = ["g"];
 
 GenerateCommand.flags = {
   help: flags.help({ char: "h" }),
-  style: flags.string(),
+  style: flags.string({
+    description: 'Name of the stylesheet type',
+    options: ['scss'],
+    multiple: false
+  }),
 };
 
 module.exports = GenerateCommand;
