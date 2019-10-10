@@ -5,7 +5,7 @@ A CLI tool to create and manage initial react project bundled with webpack, pret
 
 [![npm](https://img.shields.io/npm/v/regauge?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/regauge)
 [![CircleCI](https://img.shields.io/circleci/build/github/itchef/regauge?style=for-the-badge&cacheSeconds=360&logo=CircleCi&circle-token=ae9a68f7db509eb9281e2890eac3f50af93dabd9)](https://circleci.com/gh/itchef/regauge)
-[![DOWNLOADS](https://img.shields.io/npm/dm/regauge?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/regauge)
+[![DOWNLOADS](https://img.shields.io/npm/dy/regauge?style=for-the-badge&cacheSeconds=360)](https://npmjs.org/package/regauge)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/regauge?style=for-the-badge&cacheSeconds=360)](https://bundlephobia.com/result?p=regauge)
 [![LICENSE](https://img.shields.io/npm/l/regauge?style=for-the-badge&cacheSeconds=360)
 ](./LICENSE)
@@ -25,7 +25,7 @@ $ npm install -g regauge
 $ regauge COMMAND
 running command...
 $ regauge (-v|--version|version)
-regauge/0.2.0 darwin-x64 node-v11.5.0
+regauge/0.5.0 darwin-x64 node-v11.5.0
 $ regauge --help [COMMAND]
 USAGE
   $ regauge COMMAND
