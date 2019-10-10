@@ -36,8 +36,8 @@ GenerateCommand.args = [
 ];
 
 GenerateCommand.examples = [
-  "$ rg generate component COMPONENT",
-  "$ rg g c COMPONENT"
+  "$ regauge generate component COMPONENT",
+  "$ regauge g c COMPONENT"
 ];
 
 GenerateCommand.aliases = ["g"];
@@ -45,10 +45,10 @@ GenerateCommand.aliases = ["g"];
 GenerateCommand.flags = {
   help: flags.help({ char: "h" }),
   style: flags.string({
-    description: 'Name of the stylesheet type',
-    options: ['scss'],
+    description: "Name of the stylesheet type",
+    options: ["scss"],
     multiple: false
-  }),
+  })
 };
 
 module.exports = GenerateCommand;

@@ -4,7 +4,7 @@
   "version": "0.4.1",
   "author": "Kaustav Chakraborty @phoenixTW",
   "bin": {
-    "rg": "./bin/run"
+    "regauge": "./bin/run"
   },
   "bugs": "https://github.com/ITChef/regauge/issues",
   "dependencies": {

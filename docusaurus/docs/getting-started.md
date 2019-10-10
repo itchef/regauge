@@ -15,7 +15,7 @@ npm start
 
 > If you've previously installed `regauge` globally via `npm install -g regauge`, the you can run the following,
 ```sh
-rg new my-app
+regauge new my-app
 cd my-app
 npm start
 ```

@@ -22,24 +22,24 @@ A CLI tool to create and manage initial react project bundled with webpack, pret
 
 ```sh-session
 $ npm install -g regauge
-$ rg COMMAND
+$ regauge COMMAND
 running command...
-$ rg (-v|--version|version)
+$ regauge (-v|--version|version)
 regauge/0.2.0 darwin-x64 node-v11.5.0
-$ rg --help [COMMAND]
+$ regauge --help [COMMAND]
 USAGE
-  $ rg COMMAND
+  $ regauge COMMAND
 ...
 ```
 # Commands
 
-## `rg generate GENERATOR NAME`
+## `regauge generate GENERATOR NAME`
 
 Generate new files. Such as components, modules etc.
 
 ```
 USAGE
-  $ rg generate GENERATOR NAME
+  $ regauge generate GENERATOR NAME
 
 ARGUMENTS
   GENERATOR  (component) What you want to generate
@@ -49,22 +49,22 @@ OPTIONS
   -h, --help  show CLI help
 
 ALIASES
-  $ rg g
+  $ regauge g
 
 EXAMPLES
-  $ rg generate component COMPONENT
-  $ rg g c COMPONENT
+  $ regauge generate component COMPONENT
+  $ regauge g c COMPONENT
 ```
 
 _See code: [src/commands/generate.js](https://github.com/ITChef/regauge/blob/v0.2.0/src/commands/generate.js)_
 
-## `rg help [COMMAND]`
+## `regauge help [COMMAND]`
 
 display help for rg
 
 ```
 USAGE
-  $ rg help [COMMAND]
+  $ regauge help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -75,13 +75,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `rg new APPNAME`
+## `regauge new APPNAME`
 
 To generate a new regauge project.
 
 ```
 USAGE
-  $ rg new APPNAME
+  $ regauge new APPNAME
 
 ARGUMENTS
   APPNAME  Name of your application

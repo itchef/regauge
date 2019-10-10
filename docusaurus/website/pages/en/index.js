@@ -39,11 +39,16 @@ Button.defaultProps = {
 };
 
 const SplashContainer = props => (
-  <div className="homeContainer heroBannerWrapper">
-    <div className="homeSplashFade">
-      <div className="wrapper homeWrapper">{props.children}</div>
+  <>
+    <div className="AnnouncementBanner">
+      CLI command rg is updated to <b>regauge</b>.
     </div>
-  </div>
+    <div className="homeContainer heroBannerWrapper">
+      <div className="homeSplashFade">
+        <div className="wrapper homeWrapper">{props.children}</div>
+      </div>
+    </div>
+  </>
 );
 
 const ProjectTitle = () => (
@@ -70,7 +75,7 @@ const ConsoleSection = () => (
     </div>
     <div className="consoleContent">
       <span>> npm install -g regauge</span>
-      <span>> rg new my-app</span>
+      <span>> regauge new my-app</span>
       <span>> cd my-app</span>
       <span>> npm start</span>
     </div>

@@ -1,13 +1,13 @@
 ---
 id: cli-command-generate
-title: rg generate
+title: regauge generate
 ---
 
 Generates and/or modifies files based on a task.
 
-rg **generate** `<task>` `<name>` [_options_]
+regauge **generate** `<task>` `<name>` [_options_]
 
-rg **g** `<task>` `<name>` [_options_]
+regauge **g** `<task>` `<name>` [_options_]
 
 ## Description
 
@@ -34,9 +34,9 @@ Argument | Description |
 
 ### Component
 
-rg generate **component** `<name>` [_options_]
+regauge generate **component** `<name>` [_options_]
 
-rg g **component** `<name>` [_options_]
+regauge g **component** `<name>` [_options_]
 
 #### Description
 
@@ -52,9 +52,9 @@ Argument | Description |
 
 ### Style
 
-rg generate **style** `<name>` [_options_]
+regauge generate **style** `<name>` [_options_]
 
-rg g **style** `<name>` [_options_]
+regauge g **style** `<name>` [_options_]
 
 #### Description
 

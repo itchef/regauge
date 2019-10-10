@@ -49,12 +49,12 @@ const siteConfig = {
   homePage: {
     commands: [
       {
-        title: "rg new",
+        title: "regauge new",
         description:
           "The regauge makes it easy to create a react application with webpack that already works, right out of the box. It already follows react’s best practices!"
       },
       {
-        title: "rg generate",
+        title: "regauge generate",
         description:
           "Generates components with a simple command. The CLI also creates simple test file with it."
       }

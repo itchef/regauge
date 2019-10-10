@@ -39,3 +39,18 @@
 .projectTitle {
   color: #FFF;
 }
+
+.AnnouncementBanner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: $primaryColor;
+  background-color: #F9AA33;
+  z-index: 999;
+}
+
+body {
+  margin-top: 40px;
+}

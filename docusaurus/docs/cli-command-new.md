@@ -1,11 +1,11 @@
 ---
 id: cli-command-new
-title: rg new
+title: regauge new
 ---
 
 Creates a new workspace and an initial React App along with webpack bundled with it.
 
-rg **new** `<app_name>`
+regauge **new** `<app_name>`
 
 ## Description
 
