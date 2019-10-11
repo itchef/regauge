@@ -28,8 +28,19 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     color: #fff;
 }
 
+.cover__footer a:hover, .cover__footer a:focus {
+    font-weight: 600;
+}
+
 .cover__footer-mobile {
     display: none;
+}
+
+.no-page-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
