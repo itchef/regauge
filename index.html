@@ -9,6 +9,8 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
     <link rel="stylesheet" href="./static/styles/main.css" />
   </head>
@@ -24,6 +26,7 @@
         themeColor: "#1a237e",
         loadNavbar: "./components/navbar.md",
         loadSidebar: "./components/sidebar.md",
+        logo: "/static/images/regauge-logo-dark.png",
         search: {
           noData: "No result found",
           paths: "auto",
@@ -33,7 +36,23 @@
         },
         alias: {
           "/home": "/cover"
-        }
+        },
+        plugins: [
+          function (hook) {
+            var footer = [
+              '<hr/>',
+              '<footer>',
+              '<span>Copyright &copy;2019 <a href="https://github.com/itchef">ITChef</a>.</span>',
+              '<span>&nbsp;Authored by <a href="https://github.com/phoenixTW" target="_blank">Kaustav Chakraborty</a>.</span>',
+              '<span>&nbsp;The project is under an <a href="/#/pages/LICENSE">MIT</a> License.</span>',
+              '</footer>'
+            ].join('');
+
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+          }
+        ]
       };
     </script>
     <script>
