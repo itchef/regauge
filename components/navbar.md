@@ -1,0 +1,2 @@
+* [Home](/home)
+* [Documentation](/pages)
