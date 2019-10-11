@@ -3,6 +3,18 @@
   --theme-color: #1a237e;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section.cover .cover-main > h1 {
+    font-family: 'Mansalva', cursive;
+}
+
 section.cover .cover-main > p:last-child a:last-child:hover {
   color: #fff;
+}
+
+.app-name-link > img {
+    width: 80px;
 }
