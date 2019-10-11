@@ -1,4 +1,8 @@
 :root {
   --base-font-size: 14px;
-  --theme-color   : #1A237E;
+  --theme-color: #1a237e;
+}
+
+section.cover .cover-main > p:last-child a:last-child:hover {
+  color: #fff;
 }

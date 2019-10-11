@@ -6,10 +6,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "docsify serve docs"
+    "start": "docsify serve docs",
+    "publish": "gh-pages -d docs"
   },
   "author": "Kaustav Chakraborty",
   "devDependencies": {
-    "docsify-cli": "^4.3.0"
+    "docsify-cli": "^4.3.0",
+    "gh-pages": "2.1.1"
   }
 }

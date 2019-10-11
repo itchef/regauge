@@ -12,6 +12,6 @@
 
 - Guides
   - [Contributing](/pages/contributing "Regauge | Contributing")
-  - [Code Of Conduct](/pages/code_of_conduct "Regauge | COC")
+  - [Code Of Conduct](/pages/code_of_conduct "Regauge | Contributing")
 
 - [Changelog](changelog)

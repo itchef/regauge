@@ -10,6 +10,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+    <link rel="stylesheet" href="./static/styles/main.css" />
   </head>
   <body>
     <div data-app id="regauge-app">Please wait...</div>
@@ -29,9 +30,22 @@
           placeholder: "Search here...",
           formatUpdated: "{MM}/{DD} {HH}:{mm}",
           hideOtherSidebarContent: true
+        },
+        alias: {
+          "/home": "/cover"
         }
       };
     </script>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: "itcheforg/regauge"
+      };
+    </script>
+    <script
+      src="https://sidecar.gitter.im/dist/sidecar.v1.js"
+      async
+      defer
+    ></script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>

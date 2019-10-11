@@ -12,7 +12,7 @@ Also it provides interactive prompts for the initial _(Optional)_ configuration,
 
 * The workspace folder is given the specified project name and contain other configuration files on the same level. _(We are going to refer this as root)_
 
-* By default the files which gets generates in the workspace directory can be found on [folder structure](./folder-structure-for-new-app.md).
+* By default the files which gets generates in the workspace directory can be found on [folder structure](/pages/folder-structure).
 
 ## Arguments
 

@@ -4,7 +4,7 @@ The following is a set of guidelines for contributing to regauge. Please spend f
 
 ## Code of Conduct
 
-We have adopted a [Code of Conduct](./CODE_OF_CONDUCT.md) that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+We have adopted a [Code of Conduct](/pages/CODE_OF_CONDUCT) that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
 
 ## Open Development
 
@@ -48,6 +48,6 @@ The [core team](https://github.com/orgs/itchef/people) is monitoring for pull re
 
 After cloning antd, run `npm install` to fetch its dependencies. Then, you can run several commands:
 
-1. `./bin/run COMMAND`. Check all cli commands [here](https://itchef.github.io/regauge/docs/cli-command-new).
+1. `./bin/run COMMAND`. Check all cli commands [here](/pages/cli-command-new).
 2. `npm test` runs the complete test suite.
 3. `npm version` shows the latest released version of the application.
