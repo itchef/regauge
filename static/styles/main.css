@@ -18,3 +18,26 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 .app-name-link > img {
     width: 80px;
 }
+
+.cover__footer, .cover__footer-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a237e;
+    color: #fff;
+}
+
+.cover__footer-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .cover__footer {
+        display: none;
+    }
+    .cover__footer-mobile {
+        display: block;
+    }
+}
