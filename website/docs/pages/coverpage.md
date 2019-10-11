@@ -5,8 +5,8 @@
 
 <div class="cover__footer">
 
-Copyright &copy;2019 **[ITChef](https://github.com/itchef)** &nbsp;|&nbsp;
-The project is under an **[MIT License](/#/pages/license)** &nbsp;|&nbsp;
+Copyright &copy;2019 [ITChef](https://github.com/itchef) &nbsp;|&nbsp;
+The project is under an [MIT License](/#/pages/license) &nbsp;|&nbsp;
 Authored by [Kaustav Chakraborty](https://github.com/phoenixTW)
 
 </div>
