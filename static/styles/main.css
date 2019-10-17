@@ -49,6 +49,12 @@ section.cover .cover-main > p:last-child a:last-child:hover {
         display: none;
     }
     .cover__footer-mobile {
-        display: block;
+        display: flex;
+        align-self: flex-end;
     }
+
+    section.cover .cover-main > p:last-child a:first-child {
+        display: none;
+    }
+
 }
