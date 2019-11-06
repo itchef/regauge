@@ -22,12 +22,12 @@ class NewCommand extends Command {
       Logger.info('Creating base app........')
       const projectDir = copyBaseReact(reactTemplateDir, workingDirectory, appName)
       processPackageJson(path.join(projectDir, 'package.json'), packageJsonPath, appData)
-      Logger.info('Adding initial commit........')
       const dir = new Dir(projectDir)
       .clean('.git')
       .cd()
       Logger.info('Installing dependencies..............')
       dir.execute(() => execSync('npm install'))
+      Logger.info('Adding initial commit........')
       dir.execute(() => initialCommit())
       tmp.clean()
     }
