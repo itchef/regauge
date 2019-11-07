@@ -8,6 +8,26 @@ const {processUserInput} = require('../helpers/input.helper')
 const {Command, flags} = require('@oclif/command')
 
 class NewCommand extends Command {
+  createWorkspace(
+    reactTemplateDir,
+    workingDirectory,
+    packageJsonPath,
+    appName,
+    appData) {
+    Logger.info('Creating base app........')
+    const projectDir = copyBaseReact(
+      reactTemplateDir,
+      workingDirectory,
+      appName
+    )
+    processPackageJson(
+      path.join(projectDir, 'package.json'),
+      packageJsonPath,
+      appData
+    )
+    return new Dir(projectDir).clean('.git').cd()
+  }
+
   async run() {
     const {args} = this.parse(NewCommand)
     const {appName} = args
@@ -15,16 +35,27 @@ class NewCommand extends Command {
       const workingDirectory = process.cwd()
       const reactTemplateDir = path.join(__dirname, '../../templates')
       const appData = await processUserInput(appName)
-      Logger.info(`Creating ${appName} at ${workingDirectory}`)
       const tempDir = path.join(workingDirectory, '.tmp')
-      const tmp = new Dir(tempDir).clean().make().cd()
-      const packageJsonPath = path.join(workingDirectory, appName, 'package.json')
-      Logger.info('Creating base app........')
-      const projectDir = copyBaseReact(reactTemplateDir, workingDirectory, appName)
-      processPackageJson(path.join(projectDir, 'package.json'), packageJsonPath, appData)
-      const dir = new Dir(projectDir)
-      .clean('.git')
+      const packageJsonPath = path.join(
+        workingDirectory,
+        appName,
+        'package.json'
+      )
+
+      Logger.info(`Creating ${appName} at ${workingDirectory}`)
+      const tmp = new Dir(tempDir)
+      .clean()
+      .make()
       .cd()
+
+      const dir = this.createWorkspace(
+        reactTemplateDir,
+        workingDirectory,
+        packageJsonPath,
+        appName,
+        appData
+      )
+
       Logger.info('Installing dependencies..............')
       dir.execute(() => execSync('npm install'))
       Logger.info('Adding initial commit........')
