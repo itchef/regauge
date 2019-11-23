@@ -15,4 +15,4 @@
   - [Code Of Conduct](/pages/code_of_conduct "Regauge | Contributing")
   - [License](/pages/LICENSE "Regauge | License")
 
-- [Changelog](changelog)
+- [Changelog](/pages/Changelog "Regauge | Changelog")
