@@ -99,6 +99,10 @@ Read our [contributing guide](./CONTRIBUTING.md) and let's build a better regaug
 
 We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/itchef/regauge/pulls) or as [GitHub issues](https://github.com/itchef/regauge/issues).
 
+# [Changelog](https://itchef.github.io/regauge/#/pages/Changelog)
+
+Read the [changelog]((https://itchef.github.io/regauge/#/pages/Changelog)) to find out the release info of this project.
+
 # License
 
 **The MIT License**
