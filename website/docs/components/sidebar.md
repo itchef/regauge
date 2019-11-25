@@ -12,7 +12,7 @@
 
 - Guides
   - [Contributing](/pages/contributing "Regauge | Contributing")
-  - [Code Of Conduct](/pages/code_of_conduct "Regauge | Contributing")
+  - [Code Of Conduct](/pages/CODE_OF_CONDUCT.md "Regauge | Contributing")
   - [License](/pages/LICENSE "Regauge | License")
 
 - [Changelog](/pages/Changelog "Regauge | Changelog")
